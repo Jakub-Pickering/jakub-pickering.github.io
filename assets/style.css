@@ -4,10 +4,7 @@
    - Responsive, accessible, dark-mode friendly
    - Works with your existing HTML (Home, Research, Contact, CV)
 -------------------------------------------------------------*/
-body {
-  background-color: var(--bg);
-  color: var(--fg);
-}
+=
 
 /* ===== 1) Design tokens (TEAL theme by default) ===== */
 :root {
@@ -50,6 +47,31 @@ body {
     --accent-weak: #172554; /* Subtle navy background */
   }
 }
+}
+/* Force dark navy background sitewide */
+body {
+  background: linear-gradient(180deg, #0b1220, #111c33); /* deep navy gradient */
+  color: var(--fg);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure headers/nav/footer match dark background */
+header, footer {
+  background: transparent;
+  color: var(--fg);
+}
+
+/* Make links readable */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #60a5fa; /* brighter blue on hover */
 }
 
 /* ===== 2) Base reset & layout ===== */
