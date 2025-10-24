@@ -4,28 +4,25 @@
    - Responsive, accessible, dark-mode friendly
    - Works with your existing HTML (Home, Research, Contact, CV)
 -------------------------------------------------------------*/
-=
 
 /* ===== 1) Design tokens (TEAL theme by default) ===== */
 :root {
-  --bg: #0b1220;        /* Deep navy background */
-  --fg: #e2e8f0;        /* Light text */
-  --muted: #94a3b8;     /* Muted gray-blue for body text */
-  --line: #1e293b;      /* Border color */
-  --card: #0f172a;      /* Slightly lighter navy for cards */
+  --bg: #ffffff;
+  --fg: #0f172a;
+  --muted: #475569;
+  --line: #e5e7eb;
+  --card: #f8fafc;
 
-  /* Accent colors (navy + blue highlights) */
-  --accent: #1d4ed8;      /* Bright navy for links/buttons */
-  --accent-weak: #172554; /* Soft navy tint background */
+  /* >>> Set BLUE here <<< */
+  --accent: #1d4ed8;      /* cobalt blue */
+  --accent-weak: #eff6ff; /* light blue */
 
   --radius: 14px;
   --maxw: 900px;
 
   --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
 
-  /* Type scale */
   --step--1: clamp(0.9rem, 0.85rem + 0.2vw, 0.98rem);
   --step-0:  clamp(1.02rem, 0.96rem + 0.35vw, 1.1rem);
   --step-1:  clamp(1.25rem, 1.12rem + 0.7vw, 1.5rem);
@@ -33,20 +30,20 @@
   --step-3:  clamp(2.1rem,  1.7rem + 1.8vw,  2.6rem);
 }
 
+
 /* Dark mode defaults (tuned for teal) */
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0b1220;
-    --fg: #e2e8f0;
+    --fg: #e5e7eb;
     --muted: #94a3b8;
-    --line: #1e293b;
+    --line: #1f2937;
     --card: #0f172a;
 
-    /* === Navy accents for dark mode === */
-    --accent: #1d4ed8;      /* Bright navy link */
-    --accent-weak: #172554; /* Subtle navy background */
+    /* >>> Blue in dark mode <<< */
+    --accent: #60a5fa;
+    --accent-weak: #0b2a52;
   }
-}
 }
 
 
@@ -293,21 +290,13 @@ footer {
   .project, .contact-card { box-shadow: none; border-color: #bbb; }
 }
 
+/* ===== 13) Optional color palettes — uncomment ONE block to switch ===== */
+/* --- COBALT (blue) ---
+:root{ --bg:#ffffff; --fg:#0f172a; --muted:#475569; --line:#e5e7eb; --card:#f8fafc;
+       --accent:#1d4ed8; --accent-weak:#eff6ff; }
+@media (prefers-color-scheme: dark){ :root{ --accent:#60a5fa; --accent-weak:#0b2a52; } }
+*/
 
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0b1220;
-    --fg: #e5e7eb;
-    --muted: #94a3b8;
-    --line: #1f2937;
-    --card: #0f172a;
-
-    /* >>> Blue in dark mode <<< */
-    --accent: #60a5fa;
-    --accent-weak: #0b2a52;
-  }
-}
 /* --- PURPLE ---
 :root{ --bg:#ffffff; --fg:#0f172a; --muted:#475569; --line:#e5e7eb; --card:#faf5ff;
        --accent:#7c3aed; --accent-weak:#f3e8ff; }
