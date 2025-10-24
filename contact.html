@@ -1,1 +1,64 @@
-<!doctype html><html><head><meta charset='utf-8'><title>Contact</title><link rel='stylesheet' href='/assets/style.css'></head><body><h1>Contact</h1><p>Email: you@university.edu</p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Jakub Pickering</title>
+  <meta name="description" content="Contact information for Jakub Pickering." />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Contact</h1>
+    <p>Feel free to get in touch regarding research or academic opportunities.</p>
+    <nav aria-label="Primary">
+      <a href="/">Home</a> |
+      <a href="/projects.html">Research</a> |
+      <a href="/Academic_Cv.pdf">CV</a> |
+      <a href="/contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-card">
+      <h2>Email</h2>
+      <p>
+        <a id="email-link" href="mailto:jakub.pickering@durham.ac.uk">jakub.pickering@durham.ac.uk</a>
+      </p>
+      <p class="btn-row">
+        <button class="btn" id="copy-email" type="button" aria-label="Copy email to clipboard">Copy email</button>
+        <a class="btn" href="mailto:jakub.pickering@durham.ac.uk">Write an email</a>
+      </p>
+    </section>
+
+    <section class="contact-card">
+      <h2>Profiles</h2>
+      <p class="btn-row">
+        <a class="btn" href="https://www.linkedin.com/in/jakub-pickering-b8a994313/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/Jakub-Pickering" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Jakub Pickering</footer>
+
+  <script>
+    // Update year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Copy email functionality
+    const copyBtn = document.getElementById('copy-email');
+    const emailLink = document.getElementById('email-link');
+    copyBtn?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(emailLink.textContent.trim());
+        copyBtn.textContent = 'Copied!';
+        setTimeout(() => copyBtn.textContent = 'Copy email', 1500);
+      } catch (e) {
+        copyBtn.textContent = 'Press Ctrl/Cmd+C';
+        setTimeout(() => copyBtn.textContent = 'Copy email', 1500);
+      }
+    });
+  </script>
+</body>
+</html>
