@@ -24,30 +24,6 @@
   --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-
-  /* Type scale */
-  --step--1: clamp(0.9rem, 0.85rem + 0.2vw, 0.98rem);
-  --step-0:  clamp(1.02rem, 0.96rem + 0.35vw, 1.1rem);
-  --step-1:  clamp(1.25rem, 1.12rem + 0.7vw, 1.5rem);
-  --step-2:  clamp(1.6rem,  1.3rem + 1.2vw,  2rem);
-  --step-3:  clamp(2.1rem,  1.7rem + 1.8vw,  2.6rem);
-}
-
-/* Dark mode defaults (tuned for teal) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0b1220;
-    --fg: #e2e8f0;
-    --muted: #94a3b8;
-    --line: #1e293b;
-    --card: #0f172a;
-
-    /* === Navy accents for dark mode === */
-    --accent: #1d4ed8;      /* Bright navy link */
-    --accent-weak: #172554; /* Subtle navy background */
-  }
-}
-}
 /* Force dark navy background sitewide */
 body {
   background: linear-gradient(180deg, #0b1220, #111c33); /* deep navy gradient */
@@ -73,6 +49,30 @@ a {
 a:hover {
   color: #60a5fa; /* brighter blue on hover */
 }
+  /* Type scale */
+  --step--1: clamp(0.9rem, 0.85rem + 0.2vw, 0.98rem);
+  --step-0:  clamp(1.02rem, 0.96rem + 0.35vw, 1.1rem);
+  --step-1:  clamp(1.25rem, 1.12rem + 0.7vw, 1.5rem);
+  --step-2:  clamp(1.6rem,  1.3rem + 1.2vw,  2rem);
+  --step-3:  clamp(2.1rem,  1.7rem + 1.8vw,  2.6rem);
+}
+
+/* Dark mode defaults (tuned for teal) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --fg: #e2e8f0;
+    --muted: #94a3b8;
+    --line: #1e293b;
+    --card: #0f172a;
+
+    /* === Navy accents for dark mode === */
+    --accent: #1d4ed8;      /* Bright navy link */
+    --accent-weak: #172554; /* Subtle navy background */
+  }
+}
+}
+
 
 /* ===== 2) Base reset & layout ===== */
 *,
