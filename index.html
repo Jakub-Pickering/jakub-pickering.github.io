@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name – Academic Website</title>
+  <meta name="description" content="Prospective Master's student in X. Research interests: A, B, C." />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Prospective Master's student · Research interests: A · B · C</p>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/publications.html">Publications</a> |
+      <a href="/projects.html">Projects</a> |
+      <a href="/cv/YOURNAME_CV.pdf">CV</a> |
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>About</h2>
+    <p>Brief academic summary here.</p>
+  </main>
+  <footer>© <span id="year"></span> Your Name</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
