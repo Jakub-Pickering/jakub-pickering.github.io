@@ -13,8 +13,8 @@
   --line: #e5e7eb;        /* gray-200 */
   --card: #f8fafc;        /* slate-50 */
 
-  --accent: #1e40af;      /* navy blue (was #1d4ed8) */
-  --accent-weak: #e0e7ff; /* light periwinkle background */
+  --accent: #0a2472;       /* Deep navy */
+  --accent-weak: #e6ecff;  /* Gentle blue highlight */
 
   --radius: 14px;
   --maxw: 900px;
@@ -34,15 +34,16 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0b1220;
-    --fg: #e5e7eb;
+    --fg: #e2e8f0;
     --muted: #94a3b8;
-    --line: #1f2937;
+    --line: #1e293b;
     --card: #0f172a;
 
-   --accent: #3b82f6;      /* vivid blue highlight in dark mode */
-   --accent-weak: #172554; /* very dark navy tint */
- 
+    /* === Navy accents for dark mode === */
+    --accent: #1d4ed8;      /* Bright navy link */
+    --accent-weak: #172554; /* Subtle navy background */
   }
+}
 }
 
 /* ===== 2) Base reset & layout ===== */
