@@ -287,13 +287,21 @@ footer {
   .project, .contact-card { box-shadow: none; border-color: #bbb; }
 }
 
-/* ===== 13) Optional color palettes — uncomment ONE block to switch ===== */
-/* --- COBALT (blue) ---*/
-:root{ --bg:#ffffff; --fg:#0f172a; --muted:#475569; --line:#e5e7eb; --card:#f8fafc;
-       --accent:#1d4ed8; --accent-weak:#eff6ff; }
-@media (prefers-color-scheme: dark){ :root{ --accent:#60a5fa; --accent-weak:#0b2a52; } }
 
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --fg: #e5e7eb;
+    --muted: #94a3b8;
+    --line: #1f2937;
+    --card: #0f172a;
+
+    /* >>> Blue in dark mode <<< */
+    --accent: #60a5fa;
+    --accent-weak: #0b2a52;
+  }
+}
 /* --- PURPLE ---
 :root{ --bg:#ffffff; --fg:#0f172a; --muted:#475569; --line:#e5e7eb; --card:#faf5ff;
        --accent:#7c3aed; --accent-weak:#f3e8ff; }
