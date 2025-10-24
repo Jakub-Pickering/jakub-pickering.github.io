@@ -288,11 +288,11 @@ footer {
 }
 
 /* ===== 13) Optional color palettes — uncomment ONE block to switch ===== */
-/* --- COBALT (blue) ---
+ --- COBALT (blue) ---
 :root{ --bg:#ffffff; --fg:#0f172a; --muted:#475569; --line:#e5e7eb; --card:#f8fafc;
        --accent:#1d4ed8; --accent-weak:#eff6ff; }
 @media (prefers-color-scheme: dark){ :root{ --accent:#60a5fa; --accent-weak:#0b2a52; } }
-*/
+
 
 /* --- PURPLE ---
 :root{ --bg:#ffffff; --fg:#0f172a; --muted:#475569; --line:#e5e7eb; --card:#faf5ff;
