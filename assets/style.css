@@ -13,8 +13,8 @@
   --line: #e5e7eb;        /* gray-200 */
   --card: #f8fafc;        /* slate-50 */
 
-  --accent: #0d9488;      /* teal-600 */
-  --accent-weak: #e6fffb; /* very light teal */
+  --accent: #1e40af;      /* navy blue (was #1d4ed8) */
+  --accent-weak: #e0e7ff; /* light periwinkle background */
 
   --radius: 14px;
   --maxw: 900px;
@@ -39,8 +39,9 @@
     --line: #1f2937;
     --card: #0f172a;
 
-    --accent: #5eead4;      /* teal-300/400 */
-    --accent-weak: #073b3b; /* soft teal tint */
+   --accent: #3b82f6;      /* vivid blue highlight in dark mode */
+   --accent-weak: #172554; /* very dark navy tint */
+ 
   }
 }
 
