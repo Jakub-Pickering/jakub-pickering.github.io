@@ -4,23 +4,29 @@
    - Responsive, accessible, dark-mode friendly
    - Works with your existing HTML (Home, Research, Contact, CV)
 -------------------------------------------------------------*/
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
 
 /* ===== 1) Design tokens (TEAL theme by default) ===== */
 :root {
-  --bg: #ffffff;
-  --fg: #0f172a;          /* slate-900 */
-  --muted: #475569;       /* slate-600 */
-  --line: #e5e7eb;        /* gray-200 */
-  --card: #f8fafc;        /* slate-50 */
+  --bg: #0b1220;        /* Deep navy background */
+  --fg: #e2e8f0;        /* Light text */
+  --muted: #94a3b8;     /* Muted gray-blue for body text */
+  --line: #1e293b;      /* Border color */
+  --card: #0f172a;      /* Slightly lighter navy for cards */
 
-  --accent: #0a2472;       /* Deep navy */
-  --accent-weak: #e6ecff;  /* Gentle blue highlight */
+  /* Accent colors (navy + blue highlights) */
+  --accent: #1d4ed8;      /* Bright navy for links/buttons */
+  --accent-weak: #172554; /* Soft navy tint background */
 
   --radius: 14px;
   --maxw: 900px;
 
   --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
 
   /* Type scale */
   --step--1: clamp(0.9rem, 0.85rem + 0.2vw, 0.98rem);
